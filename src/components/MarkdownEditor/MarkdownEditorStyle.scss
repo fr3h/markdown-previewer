@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.card {
+    position: relative;
+    padding: 0;
+
+
+    textarea {
+        position: absolute;
+        top: $card-header-height;
+        left: 0;
+        width: 100%;
+        height: calc(100% - $card-header-height);
+        box-sizing: border-box;
+        border: none;
+
+        padding: 1em;
+        border-bottom-left-radius: var(--bs-border-radius);
+        border-bottom-right-radius: var(--bs-border-radius);
+
+        overflow-y: auto;
+        resize: none;
+    }
+}

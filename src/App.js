@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MarkdownEditor from './components/MarkdownEditor/MarkdownEditorComponent';
+import MarkdownPreviewer from './components/MarkdownViewer/MarkdownViewerComponent';
+import './App.scss';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-body-secondary d-flex p-5">
+      <div className="col-6 pe-2">
+        <MarkdownEditor />
+      </div>
+      <div className="col-6 ps-2">
+        <MarkdownPreviewer />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+#preview {
+    max-width: 100%;
+    overflow-x: hidden;
+    word-wrap: break-word;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
