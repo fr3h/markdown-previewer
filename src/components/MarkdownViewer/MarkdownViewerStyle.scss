@@ -2,10 +2,118 @@
     max-width: 100%;
     overflow-x: hidden;
     word-wrap: break-word;
+    color: #333;
+    border-radius: var(--bs-border-radius);
+
+    // Estilos para los títulos
+    h1, h2, h3, h4, h5, h6 {
+        color: #004085;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    // Estilos para párrafos
+    p {
+        line-height: 1.6;
+    }
+
+    // Estilos para enlaces
+    a {
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+        text-decoration: underline;
+        }
+    }
+
+    // Estilos para bloques de código
+    pre, code {
+        background-color: #e9ecef;
+        border-radius: 0.25rem;
+    }
+
+    pre {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    code {
+        padding: 0.2rem 0.4rem;
+        font-family: monospace;
+        font-size: 0.9em;
+    }
 
     img {
         max-width: 100%;
         height: auto;
         display: block;
+        margin: 1rem auto;
+    }
+
+    // Estilos para listas
+    ul, ol {
+        margin-left: 1.5rem;
+
+        li {
+        margin-bottom: 0.25rem;
+        }
+    }
+
+    // Estilos para citas
+    blockquote {
+        padding: 0.5rem 1rem;
+        margin: 0 0 1rem;
+        font-size: 0.9em;
+        color: #6c757d;
+        border-left: 0.25rem solid #e9ecef;
+        background-color: #f8f9fa;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    // Estilos para tablas
+    table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        border-collapse: collapse;
+
+        th, td {
+        padding: 0.75rem;
+        border: 1px solid #dee2e6;
+        }
+
+        th {
+        text-align: left;
+        background-color: #e9ecef;
+        }
+    }
+
+    // Estilos para texto en negrita
+    strong {
+        font-weight: bold;
+    }
+
+    // Estilos para texto en cursiva
+    em {
+        font-style: italic;
+    }
+
+    // Estilos para texto tachado
+    del {
+        text-decoration: line-through;
+    }
+
+    // Estilos para listas ordenadas
+    ol {
+        list-style-type: decimal;
+    }
+
+    // Estilos para listas desordenadas
+    ul {
+        list-style-type: disc;
     }
 }
