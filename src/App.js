@@ -6,11 +6,11 @@ import './App.scss';
 function App() {
 
   return (
-    <div className="App bg-body-secondary d-flex p-5">
-      <div className="col-6 pe-2">
+    <div className="App bg-body-secondary d-flex flex-wrap p-5">
+      <div className="col-12 col-lg-6 pe-lg-2 mb-4 mb-lg-0">
         <MarkdownEditor />
       </div>
-      <div className="col-6 ps-2">
+      <div className="col-12 col-lg-6 ps-lg-2">
         <MarkdownPreviewer />
       </div>
     </div>
